@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile img{
+  max-width: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border:1px solid rgb(20, 20, 36);
+}
+
+.card-profile img{
+    max-width: 120px;
+ 
+    height: 120px;
+    border: 1px solid #111;
+}
+
+.list_img img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+@media screen and (max-width: 430px) {
+  .search_add {
+    flex-wrap: wrap;
+  }
+
+  .search_add .add_btn {
+    padding-top: 10px;
+  }
+}
+
+
+body{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#brand{
+  color: white !important;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px white !important;
+}
+
+.pageContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.pageContainer h1 {
+  font-size: 3em;
+  color: #333;
+}
+.pageContainer p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+
+.containerStyle {
+  display: flex;
+  flex-direction: column;
+  min-height:100vh;
+}
+
+.mainStyle{
+  flex: 1;
+  margin-bottom: 20px;
+}
