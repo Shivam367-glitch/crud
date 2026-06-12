@@ -28,6 +28,6 @@ export const statusChange=async(status,_id)=>{
    return await customRequest("PUT",`${BASE_URL}/api/user/status/${_id}`,{status})
 }
 
-export const exportToCsv = async()=>{
-   return await customRequest("GET",`${BASE_URL}/api/user/exportCsv`,{});
+export const exportToCsv = async(search,gender,status,sort)=>{
+   return await customRequest("GET",`${BASE_URL}/api/user/exportCsv?search=${search}&gender=${gender}&status=${status}&sort=${sort}`,{});
 }
