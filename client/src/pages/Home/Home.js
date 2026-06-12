@@ -70,7 +70,7 @@ const Home = () => {
   };
   const exportCSV = async () => {
     try {
-      const response = await exportToCsv();
+      const response = await exportToCsv(filters.search, filters.gender, filters.status, filters.sort);
       if (response.status === 200) {
         window.open(response.data.downloadUrl, "blank");
       } else {
